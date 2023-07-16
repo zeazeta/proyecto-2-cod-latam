@@ -1,0 +1,193 @@
+/* En este archivo escriban su CSS */
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* Para que el scrolleo en la one page sea suave */
+  scroll-behavior: smooth;
+}
+
+/* Para quitar los puntos a los items de listas */
+ul {
+  list-style: none;
+}
+
+/* Para que los enlaces hereden el color de texto y no tengan subrayado */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
+*  el margin: auto; para tenerlo centrado fácilmente ;)
+*/
+
+/* Establecer imagen de fondo en toda la página y agregar borde */
+body {
+  background-color: #4D0080;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg fill-opacity='0.97'%3E%3Ccircle fill='%234D0080' cx='50' cy='0' r='50'/%3E%3Cg fill='%23561186' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%235f1e8c' cx='50' cy='100' r='50'/%3E%3Cg fill='%23672992' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%23703399' cx='50' cy='200' r='50'/%3E%3Cg fill='%23783d9f' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%238047a5' cx='50' cy='300' r='50'/%3E%3Cg fill='%238951ab' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%23915bb2' cx='50' cy='400' r='50'/%3E%3Cg fill='%239965b8' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%23a16fbe' cx='50' cy='500' r='50'/%3E%3Cg fill='%23a979c5' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%23b183cb' cx='50' cy='600' r='50'/%3E%3Cg fill='%23ba8dd1' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%23c297d8' cx='50' cy='700' r='50'/%3E%3Cg fill='%23caa1de' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%23d2abe5' cx='50' cy='800' r='50'/%3E%3Cg fill='%23dab5eb' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%23e2c0f2' cx='50' cy='900' r='50'/%3E%3Cg fill='%23eacaf8' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23F2D5FF' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: contain;
+  border: 0.4cm solid rgb(244, 197, 238);
+  /* Fonts */
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  font-stretch: expanded;
+  border-color: azure;
+  color: #3c223c;
+
+}
+
+/* Establecer imagen de fondo responsive en el encabezado y ajustar tamaño */
+header {
+  background-image: url('img/image.png');
+  background-size: 100%;
+  background-position: center;
+  z-index: 999;
+  border-bottom: 0.5px solid black;
+  position: relative;
+  height: 100px;
+}
+.logo-container {
+  max-width: 100%;
+}
+
+header nav {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+header nav ul li {
+    display:inline-block; 
+    margin-left:20px; 
+}
+
+/* Establecer color y bordes redondeados en los botones "Acerca de mí", "Contacto" y "Descargar mi CV" */
+header nav ul li a, #downloadV {
+  background-color:#440044; 
+  border-radius:20px; 
+  padding:20px 40px; 
+  color:white; 
+  
+  
+}
+
+
+/* Subrayar botones y enlaces al pasar el mouse por encima */
+button:hover, a:hover {
+    text-decoration:underline; 
+}
+
+/* Centrar y espaciar imágenes de redes sociales */
+.social-media {
+    text-align:center; 
+}
+
+.social-media a {
+    display:inline-block; 
+    margin:auto; 
+    width:auto; 
+    padding-left:.5em; 
+    padding-right:.5em
+}
+
+/* Cambiar color, ajustar tamaño y aumentar tamaño de imágenes en el pie de página */
+footer img {
+    filter:sepia(100%) hue-rotate(-30deg) saturate(300%); 
+    width:50px; 
+    height:50px; 
+    object-fit:cover; 
+    transform:scale(1.2); 
+}
+
+/* Centrar texto en el pie de página y agregar espaciado a último párrafo */
+footer p {
+    text-align:center; 
+}
+
+footer p:last-of-type {
+    line-height:1.5; 
+}
+
+/* Centrar títulos h1 y h2 y agregar espacio inferior */
+h1, h2 {
+    text-align:center; 
+    margin-bottom:2em; 
+}
+
+/* Separar párrafos y agregar padding */
+p {
+    margin-bottom:20px; 
+    padding:10px; 
+}
+
+/* Centrar foto de perfil, hacer que tenga bordes redondeados y reducir tamaño */
+#acercademi img {
+    display:block; 
+    margin:auto; 
+    border-radius:50%; 
+    transform:scale(.5); 
+}
+
+/* Centrar y separar botón para descargar CV */
+#downloadCV {
+    display:block; 
+    margin:auto; 
+    width:auto;
+    text-decoration:none; 
+}
+
+/* Agregar margen superior al elemento main para evitar superposición con encabezado */
+main {
+    margin-top: 290px;
+    margin-bottom: auto;
+}
+
+/* Media queries para dispositivos móviles, tabletas y escritorio */
+
+/* Dispositivos móviles (ancho máximo de pantalla de600px) */
+@media (max-width600px) {}
+
+  /* Mostrar botones "Acerca de mí" y "Contacto" en bloque */
+   header nav ul li {
+    display:block; 
+    margin:auto; 
+    width:auto; 
+    text-align:center; 
+    padding-top:8em; 
+    padding-bottom:.5em; 
+    border-radius:.5em; 
+    border-color:#D65472; 
+    border-style:solid; 
+    border-width:.1em; 
+    color:#D65472
+   }
+
+/* Tabletas (ancho mínimo de pantalla de601px y máximo de pantalla de1024px) */
+@media (min-width601px) and (max-width1024px){}
+    /* Aquí puedes agregar reglas CSS específicas para tabletas */
+
+
+/* Escritorio (ancho mínimo de pantalla de1025px) */
+@media (min-width1025px) {
+    /* Aquí puedes agregar reglas CSS específicas para escritorio */
+}
+/* Recomendaciones! 
+*  - Comenzar desde lo más general y luego ir hacia lo mas específico, asignando primero
+*    "estilos generales". Una buena idea sería comenzar por el <body> ;)
+*
+*  - Recuerden que queremos evitar "repetir código", en CSS usando la cualidad de la herencia
+*    podemos setear ciertas propiedades en un elemento padre y dejar que sean heredadas (por ejemplo: font-size)
+*
+*  - Nadie sabe todas las propiedades CSS de memoria, si no saben como hacer algo no lo recuerdan, la respuesta
+*    pueden encontrarla buscando en la web algo como "CSS como hacer ... " o "propiedad css para hacer ..."
+*
+*  - Usen mucho las herramientas para desarrolladores del navegador para ir
+*    probando el CSS que escriben, resolver dudas y problemas.
+*
+*  - Paciencia, resiliencia y creatividad! No se desanimen, las primeras experiencias maquetando con HTML y CSS
+*    pueden ser frustrantes, pero estas habilidades se van desarrollando con la experiencia, es como aprender
+*    un trabajo manual, hacer una artesanía, tocar un instrumento musical... la práctica es todo!
+*/
